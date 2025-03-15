@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an Ecommerce Project">
+    <title>ClicknCart</title>
+   
+    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="desktop.css" media="screen and (max-width : 982px)">
+<link rel="stylesheet" href="desktop.css" media="screen and (max-width : 982px)">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar starts here -->
+    <i class="fa-sharp fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-up">
+            <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+         <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+         <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+         <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+         <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+         
+         <li class="nav__list"><a href="profile.html" class="nav__link"><img class="profile-icon" src="Profile.png" alt="profile logo"></a></li>
+        
+        </ul>
+        <ul class="nav-down">
+      <li class="nav__list"><a href="index.html" class="nav-brand nav__link">ClicknCart</a></li>
+       <li class="nav__list"><a href="cart.html" class="nav__link">
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+        Cart 2 Products - 1224 <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+       </a></li>
+        
+    </ul>
+    </nav>
+
+ 
+      <!-- navbar ends here -->
+        <!-- Header starts here -->
+         
+        <header class="bannar">
+            <marquee class="bannar__title" direction="left" scrollamount="12">27% sales going on</marquee>
+            <div class="bannar__feature">
+                <article class="feature">
+                    <i class="fa-solid fa-truck-fast feature-icon"></i>
+                    <h3>Shiping within 7 days</h3>
+                </article>
+                     <article class="feature">
+                        <i class="fa-brands fa-rocketchat feature-icon"></i>   
+                    <h3>Support 24-7</h3>
+                </article>
+                     <article class="feature">
+                        <i class="fa-solid fa-money-bill feature-icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+                
+            </div>
+        </header>
+
+        <!-- Header ends here -->
+       <!-- Main starts here -->
+       
+       <main>
+        <div class="sidebar">
+          <section class="catagories-section">
+            <h3 class="section-title">Catagories</h3>
+                <ul class="list">
+                     <li class="list-item">
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">Phone
+                        </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="tablets">
+                            <input type="checkbox" name="tablets" id="tablets" value="tablets">Tablets
+                        </label>
+                    </li>
+                     <li class="list-item">
+                        <label for="tv">
+                            <input type="checkbox" name="tv" id="tv" value="tv">Televisions
+                        </label>
+                    </li>
+                     <li class="list-item">
+                        <label for="pc">
+                            <input type="checkbox" name="pc" id="pc" value="pc">Computers
+                        </label>
+                    </li>
+                     
+                     <li class="list-item">
+                        <label for="headphone">
+                            <input type="checkbox" name="headphone" id="headphone" value="headphone">Headphones
+                        </label>
+                    </li>
+                     <li class="list-item">
+                        <label for="smartwatch">
+                            <input type="checkbox" name="smartwatch" id="smartwatch" value="smartwatch">Smart Watch
+                        </label>
+                    </li>
+                    
+                </ul>
+            
+          </section>
+          <section class="Price-section">
+            <h3 class="section-title">Price Range</h3>
+                <ul class="list">
+                     <li class="list-item">
+                        <label for="price1">
+                            <input type="radio" name="price1" id="price1" value="[0-200]">0Tk-400Tk
+                        </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="price2">
+                            <input type="radio" name="price2" id="price2" value="[400-1200]">400Tk-1200Tk
+                        </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="price3">
+                            <input type="radio" name="price3" id="price3" value="[1200-3000]">1200Tk-3000Tk
+                        </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="price4">
+                            <input type="radio" name="price4" id="price4" value="[3000-5000]">3000Tk-5000Tk
+                        </label>
+                    </li>
+                     
+                    <li class="list-item">
+                        <label for="price5">
+                            <input type="radio" name="price5" id="price5" value="[5000+]">5000Tk+
+                        </label>
+                    </li>
+                    
+                </ul>
+            
+          </section>
+          <section class="shipping-section">
+            <h3 class="section-title">Shipping Method</h3>
+                <ul class="list">
+                     <li class="list-item">
+                        <label for="free">
+                            <input type="radio" name="free" id="free" value="free">Free
+                        </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="payment">
+                            <input type="radio" name="payment" id="payment" value="payment">Payment 
+                        </label>
+                    </li>
+                     
+                </ul>
+            
+          </section>
+          
+        </div>
+        <div class="main-bar">
+             <section class="actions">
+                <div class="actions__sort">
+                <label for="sort" class="sort-font">Sort By: </label>
+                <select name="sorting" id="sorting">
+                    <option value="sold">Most sold first</option>
+                    <option value="rating">Most rated first</option>
+                    <option value="price">Cheapest first</option>
+                    <option value="arrival">Newest first</option>
+                    <option value="discount">Bigest Discount first</option>
+                    
+                </select>
+                </div>
+                <div class="action__search">
+                    <label for="src" class="sort-font">Search: </label>
+                    <input type="text" placeholder="Search Your Products" class="src-input">
+                    <button class="src-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    
+                </div>
+
+             </section>
+             <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="product-hr">
+                        <span>7 sold</span>
+                        
+                    </div>
+                    <img src="hoco.jpeg" alt="hoco headphone" class="product__img">
+                    <div class="product__body">
+                        <h3>Hoco W35 Wireless Headphone</h3>
+                        <P>
+                            <span class="dot-green"></span>
+                            <span class="dot-black"></span>
+                            <span class="dot-red"></span>
+                            
+                        </P>
+                        <p class="product__disc">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione....
+                            <a href="product.html">Learn More</a>
+                            </span>
+                        </p>
+                        <h4 class="product__price">Prize:798Tk</h4>
+                        <p class="product__rating">Rating: 4.5/5</p>
+                        <button class="product__btn">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in Stock</span>
+                        <hr class="product-hr">
+                        <span>9 sold</span>
+                        
+                    </div>
+                    <img src="AirPods 4.jpg" alt="hoco headphone" class="product__img">
+                    <div class="product__body">
+                        <h3>AirPods 4</h3>
+                        <P>
+                            <span class="dot-green"></span>
+                            <span class="dot-black"></span>
+                            <span class="dot-red"></span>
+                            
+                        </P>
+                        <p class="product__disc">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione....
+                            <a href="product.html">Learn More</a>
+                            </span>
+                        </p>
+                        <h4 class="product__price">Prize:1798Tk</h4>
+                        <p class="product__rating">Rating: 4.5/5</p>
+                        <button class="product__btn">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>4 in Stock</span>
+                        <hr class="product-hr">
+                        <span>6 sold</span>
+                        
+                    </div>
+                    <img src="Apple Watch Series 9.webp" alt="hoco headphone" class="product__img">
+                    <div class="product__body">
+                        <h3>Apple Watch Series 9</h3>
+                        <P>
+                            <span class="dot-green"></span>
+                            <span class="dot-black"></span>
+                            <span class="dot-red"></span>
+                            
+                        </P>
+                        <p class="product__disc">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione....
+                            <a href="product.html">Learn More</a>
+                            </span>
+                        </p>
+                        <h4 class="product__price">Prize:48999Tk</h4>
+                        <p class="product__rating">Rating: 4.35/5</p>
+                        <button class="product__btn">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in Stock</span>
+                        <hr class="product-hr">
+                        <span>11 sold</span>
+                        
+                    </div>
+                    <img src="ladywatch.webp" alt="ladywatch" class="product__img">
+                    <div class="product__body">
+                        <h3>Olevs 9931L</h3>
+                        <P>
+                            <span class="dot-green"></span>
+                            <span class="dot-black"></span>
+                            <span class="dot-red"></span>
+                            
+                        </P>
+                        <p class="product__disc">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione....
+                            <a href="product.html">Learn More</a>
+                            </span>
+                        </p>
+                        <h4 class="product__price">Prize:2199</h4>
+                        <p class="product__rating">Rating: 4.65/5</p>
+                        <button class="product__btn">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>15 in Stock</span>
+                        <hr class="product-hr">
+                        <span>7 sold</span>
+                        
+                    </div>
+                    <img src="BINBOND 1236 Men's Classic Style Quartz.webp" alt="men watch" class="product__img">
+                    <div class="product__body">
+                        <h3>BINBOND 1236 Men's Classic Style Quartz</h3>
+                        <P>
+                            <span class="dot-green"></span>
+                            <span class="dot-black"></span>
+                            <span class="dot-red"></span>
+                            
+                        </P>
+                        <p class="product__disc">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione....
+                            <a href="product.html">Learn More</a>
+                            </span>
+                        </p>
+                        <h4 class="product__price">Prize:2298Tk</h4>
+                        <p class="product__rating">Rating: 4.25/5</p>
+                        <button class="product__btn">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in Stock</span>
+                        <hr class="product-hr">
+                        <span>17 sold</span>
+                        
+                    </div>
+                    <img src="realme.jpeg" alt="realme" class="product__img">
+                    <div class="product__body">
+                        <h3>realme C65</h3>
+                        <P>
+                            <span class="dot-green"></span>
+                            <span class="dot-black"></span>
+                            <span class="dot-red"></span>
+                            
+                        </P>
+                        <p class="product__disc">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione....
+                            <a href="product.html">Learn More</a>
+                            </span>
+                        </p>
+                        <h4 class="product__price">Prize:19998Tk</h4>
+                        <p class="product__rating">Rating: 4.85/5</p>
+                        <button class="product__btn">Add To Cart</button>
+                    </div>
+                </article>
+           
+             </section>
+             <div class="pagination">
+                <button class="pagination-btn">
+                    <i class="fa-solid fa-less-than"></i>
+                </button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">4</button>
+                <button class="pagination-btn">5</button>
+                <button class="pagination-btn">6</button>
+                <button class="pagination-btn">7</button>
+                <button class="pagination-btn">8</button>
+                <button class="pagination-btn">9</button>
+                <button class="pagination-btn">10</button>
+                <button class="pagination-btn">...</button>
+                <button class="pagination-btn">50</button>
+                <button class="pagination-btn">
+                    <i class="fa-solid fa-greater-than"></i>
+                </button>
+                
+             </div>
+        </div>
+       </main>
+      
+       <!-- Main ends here -->
+      
+      <!-- Footer starts here -->
+
+    <footer>
+     <div class="footer">
+        <div>
+            <label for="subscribe">Subscribe to Newsletter: </label>  
+            <input type="email" placeholder="Enter Your Email" id="subscribe" name="subscribe" class="footer__input">
+            <button class="footer-btn">Subscribe</button>
+          </div>
+          <div>
+              <p>&copy;Copyright 2024 ClicknCart. All right reserved</p>
+          </div>
+     </div>
+    </footer>
+
+
+      <!-- Footer ends here -->
+     <script src="index.js"></script>
+</body>
+
+</html>
+        

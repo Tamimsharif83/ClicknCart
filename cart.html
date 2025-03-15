@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an Ecommerce Project">
+    <title>ClicknCart</title>
+   
+    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="desktop.css" media="screen and (max-width : 982px)">
+<link rel="stylesheet" href="tablet.css" media="screen and (max-width : 768px)">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar starts here -->
+    <i class="fa-sharp fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-up">
+            <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+         <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+         <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+         <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+         <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+         
+         <li class="nav__list"><a href="profile.html" class="nav__link"><img class="profile-icon" src="Profile.png" alt="profile logo"></a></li>
+        
+        </ul>
+      
+    </nav>
+
+ 
+      <!-- navbar ends here -->
+      <main class="cart-details">
+        <div class="cart-left">
+         <div class="cart-item-heading card">
+            <div>
+                <h3>Shopping Cart [2 items]</h3>
+            </div>
+          <div class="item-selecting">
+            <div>
+              <label for="select">
+                <input type="checkbox">select all items
+              </label>
+            </div>
+          <div>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+         <div>
+          <button class="shop-more-btn">
+            Shop More
+          </button>
+         </div>
+          
+          
+          </div>
+
+
+         </div>
+         <div class="cart-itemlist">
+          <div class="cart-item card">
+            <div>
+              <label for="cartitem">
+                <input type="checkbox">
+                
+                </label>
+            </div>
+            <div >
+              <img src="hoco.jpeg" alt="" class="cart-img">
+            </div>
+           <div class="cart-product-detail">
+            <h3>Hoco W35 Wireless Headphone</h3>
+            <h4>Prize:798Tk</h4>
+            <p class="cart-product-detail-shipping">Free Shipping</p>
+           </div>
+            
+           
+           <div class="actions_cartitem">
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <div class="item-count">
+              <button class="inc-dec-btn">
+                <i class="fa-solid fa-plus"></i> 
+              </button>
+              <span>1</span>
+              <button class="inc-dec-btn">
+                <i class="fa-solid fa-minus"></i> 
+              </button>
+
+            </div>
+           </div>
+          </div>
+
+         <div class="cart-item card">
+            <div>
+              <label for="cartitem">
+                <input type="checkbox">
+                
+                </label>
+            </div>
+            <div >
+              <img src="ladywatch.webp" alt="" class="cart-img">
+            </div>
+           <div class="cart-product-detail">
+            <h3>Olevs 9931L</h3>
+            <h4>Prize:2199Tk</h4>
+            <p class="cart-product-detail-shipping">Free Shipping</p>
+           </div>
+            
+           
+           <div class="actions_cartitem">
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <div class="item-count">
+              <button class="inc-dec-btn">
+                <i class="fa-solid fa-plus"></i> 
+              </button>
+              <span>2</span>
+              <button class="inc-dec-btn">
+                <i class="fa-solid fa-minus"></i> 
+              </button>
+
+            </div>
+           </div>
+          </div>
+          
+          
+        </div>
+
+        </div>
+        
+        <div class="cart-right">
+         <div class="cart-payment-status card">
+         <h2>Payment Summary</h2>
+         <div class="cart-payment-status__disc">
+          <p>Subtotal:</p>
+          <p>2997Tk</p>
+         </div>
+         <div class="cart-payment-status__disc">
+          <p>Shipping Cost:</p>
+          <p>00Tk</p>
+         </div>
+         <div class="cart-payment-status__disc">
+          <p>Total cost:</p>
+          <p>2997Tk</p>
+         </div>
+         <div class="payment-btn-div" >
+         <button class="payment-btn">Pay Now</button>
+         </div>
+        </div>
+         <div class="cart-payment-method card">
+         <h2>Payment Method</h2>
+         <div class="payment-icon">
+          <i class="fa-brands fa-paypal"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-apple-pay"></i>
+          <i class="fa-brands fa-google-pay"></i>
+          <i class="fa-brands fa-amazon-pay "></i>
+
+         </div>
+         </div>
+
+        </div>
+        
+      </main> 
+  
+      <!-- Footer starts here -->
+
+    <footer>
+     <div class="footer">
+        <div>
+            <label for="subscribe">Subscribe to Newsletter: </label>  
+            <input type="email" placeholder="Enter Your Email" id="subscribe" name="subscribe" class="footer__input">
+            <button class="footer-btn">Subscribe</button>
+          </div>
+          <div>
+              <p>&copy;Copyright 2024 ClicknCart. All right reserved</p>
+          </div>
+     </div>
+    </footer>
+
+
+      <!-- Footer ends here -->
+      <script src="index.js"></script>
+</body>
+
+</html>
+        
